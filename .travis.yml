@@ -7,16 +7,16 @@ import:
 - source: .travis/test.yml
   if: branch = dev || branch = master || branch = issue-4
   
-jobs:
-  include:
-    - stage: GitHub Release
-      script: echo "Deploying to GitHub releases ..."
-      deploy:
-        provider: releases
-        api_key: 
-          secure: $d06313c62aabff231cba17d04c3fe548cf300666
-        skip_cleanup: true
-        on:
-          tags: true
-          prerelease: true
-          tag_name: "new release"
+deploy:
+  provider: releases
+  script: echo "Deploying to GitHub releases ..."
+  pre-release: true
+  api_key:
+    secure: d06313c62aabff231cba17d04c3fe548cf300666
+  file: 
+    - drop.txt
+  skip_cleanup: true
+  on:
+    repo:  XSkeolan/TravisIntegration 
+    tags: true
+    tag_name: "first release"
