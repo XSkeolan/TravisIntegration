@@ -10,7 +10,6 @@ import:
 deploy:
   provider: releases
   script: echo "Deploying to GitHub releases ..."
-  pre-release: true
   api_key:
     secure: d06313c62aabff231cba17d04c3fe548cf300666
   file: 
@@ -20,3 +19,4 @@ deploy:
     repo:  XSkeolan/TravisIntegration 
     tags: true
     tag_name: "pre"
+    pre-release: true
