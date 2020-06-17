@@ -19,4 +19,4 @@ deploy:
   on:
     repo:  XSkeolan/TravisIntegration 
     tags: true
-    tag_name: "first release"
+    tag_name: "pre"
