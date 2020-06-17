@@ -10,3 +10,4 @@ deploy:
     tags: true
     pre-release: true
     tag_name: "pre1"
+    repo: XSkeolan/TravisIntegration
