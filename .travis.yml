@@ -1,17 +1,12 @@
 import:
 - source: .travis/test.yml
   if: branch = dev || branch = master || branch = issue-4
-  
+
 deploy:
   provider: releases
-  script: echo "Deploying to GitHub releases ..."
-  api_key:
-    secure: d06313c62aabff231cba17d04c3fe548cf300666
-  file: 
-    - drop.txt
   skip_cleanup: true
+  api_key: $d06313c62aabff231cba17d04c3fe548cf300666
   on:
-    repo:  XSkeolan/TravisIntegration 
     tags: true
-    tag_name: "pre"
     pre-release: true
+    tag_name: "pre1"
