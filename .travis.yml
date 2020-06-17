@@ -1,4 +1,8 @@
-language: python
-puthon: 3.8
-script: 
-  - pytest
+branches:
+  only:
+  - master
+  - dev
+  - issue-4
+import:
+- source: .travis/test.yml
+  if: branch = dev || branch = master || branch = issue-4
