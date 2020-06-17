@@ -56,8 +56,8 @@ class MyTestCase(unittest.TestCase):
     def test_1_2_1(self):
         experror = ""
         a = 1
-        b = -3
-        c = 2
+        b = 2
+        c = 1
         expresult = [-1]
         answer, acterror = QuadraticEqation.Equation.Equl(a, b, c)
         self.assertEqual(experror, acterror)
