@@ -5,12 +5,13 @@
 
 language: bash
 
-#install:
-  #- python-logilab-common
+install:
+  - 
 script:
-  - sudo add-apt-repository ppa:deadsnakes/ppa
-  - sudo apt-get update
-  - sudo apt-get install python3.6
+  #- sudo add-apt-repository ppa:deadsnakes/ppa
+  #- sudo apt-get update
+  #- sudo apt-get install python3.6
+  - python setup.py install
   - cd .travis
   - pytest
   - cd ..
