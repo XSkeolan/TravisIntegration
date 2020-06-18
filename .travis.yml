@@ -5,6 +5,8 @@
 
 language: bash
 
+install:
+  - python-logilab-common
 script:
   - cd .travis
   - pytest
