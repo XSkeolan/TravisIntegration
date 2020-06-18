@@ -1,6 +1,5 @@
 language: bash
 
 script:
-- if [ "$TRAVIS_BRANCH" = "dev" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
-  make push; fi
+- make push;
 
