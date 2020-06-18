@@ -6,6 +6,9 @@ import:
 language: bash
 
 script:
+  - cd .travis
+  - pytest
+  - cd ..
   - echo "Tagging the release"
   - git tag "v.0.1.1"
   - git push https://${GH_TOKEN}@github.com/XSkeolan/TravisIntegration v.0.1
