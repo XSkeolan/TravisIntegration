@@ -1,18 +1,7 @@
-#language: python
-#puthon: 3.8
-#import:
-#- source: .travis/test1.yml
-
 language: python
 python: 3.8
 script:
-  #- sudo add-apt-repository ppa:deadsnakes/ppa
-  #- sudo apt-get update
-  #- sudo apt-get install python3.6
-  - python setup.py install
-  - cd .travis
   - pytest
-  - cd ..
   - echo "Tagging the release"
   - git tag "v.0.1.1"
   - git push https://${GH_TOKEN}@github.com/XSkeolan/TravisIntegration v.0.1
