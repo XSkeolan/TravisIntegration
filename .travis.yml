@@ -3,9 +3,8 @@
 #import:
 #- source: .travis/test1.yml
 
-language: bash
-install:
-  - pip install --upgarde pip
+language: python
+python: 3.8
 script:
   #- sudo add-apt-repository ppa:deadsnakes/ppa
   #- sudo apt-get update
