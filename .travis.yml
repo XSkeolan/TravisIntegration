@@ -5,9 +5,11 @@
 
 language: bash
 
-install:
-  - python-logilab-common
+#install:
+  #- python-logilab-common
 script:
+  - sudo apt-get update
+  - sudo apt-get install python3.6
   - cd .travis
   - pytest
   - cd ..
