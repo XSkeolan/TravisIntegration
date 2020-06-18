@@ -1,7 +1,7 @@
-language: python
-puthon: 3.8
-import:
-- source: .travis/test1.yml
+#language: python
+#puthon: 3.8
+#import:
+#- source: .travis/test1.yml
 
 language: bash
 
