@@ -1,4 +1,5 @@
 language: bash
 
-- make push;
+script:
+make push
 
