@@ -3,4 +3,4 @@ language: bash
 script:
   - echo "Tagging the release"
   - git tag "v.0.1"
-  - git push https://${GH_TOKEN}@github.com/XSkeolan/TravisIntegration "v.0.1"
+  - git push https://9950e1bf80c686fb1741e4da75caf6fba9167e56@github.com/XSkeolan/TravisIntegration "v.0.1"
