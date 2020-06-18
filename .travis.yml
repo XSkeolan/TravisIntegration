@@ -1,3 +1,5 @@
+language: python
+puthon: 3.8
 import:
 - source: .travis/test.yml
   if: branch = dev || branch = master || branch = issue-4
