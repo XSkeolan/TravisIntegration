@@ -1,10 +1,6 @@
-import:
-- source: .travis/test.yml
-  if: branch = dev || branch = master || branch = issue-4
-
 language: bash
 
 script:
-- if [ "$TRAVIS_BRANCH" = "master" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
-  make push; else make test; fi
+- if [ "$TRAVIS_BRANCH" = "dev" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
+  make push; fi
 
