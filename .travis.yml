@@ -3,5 +3,8 @@ import:
   if: branch = dev || branch = master || branch = issue-4
 
 language: bash
--make push
+
+script:
+- if [ "$TRAVIS_BRANCH" = "master" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
+  make push; else make test; fi
 
