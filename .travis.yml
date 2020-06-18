@@ -2,5 +2,5 @@ language: bash
 
 script:
   - echo "Tagging the release"
-  - git tag "$(shell date -u +"%Y-%m-%dT%H-%M-%SZ_%s")"
-  - git push https://${GH_TOKEN}@github.com/XSkeolan/TravisIntegration $(shell date -u +"%Y-%m-%dT%H-%M-%SZ_%s")
+  - git tag "v.0.1"
+  - git push https://${GH_TOKEN}@github.com/XSkeolan/TravisIntegration "v.0.1"
