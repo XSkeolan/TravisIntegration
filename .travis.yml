@@ -4,7 +4,8 @@
 #- source: .travis/test1.yml
 
 language: bash
-
+install:
+  - pip install
 script:
   #- sudo add-apt-repository ppa:deadsnakes/ppa
   #- sudo apt-get update
