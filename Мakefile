@@ -2,7 +2,6 @@ DEPLOY_TIME := $(shell date -u +"%Y-%m-%dT%H-%M-%SZ_%s")
 
 push:
   echo "Tagging the release"
-  git remote add tokenremote https://${GH_TOKEN}@github.com/XSkeolan/TravisIntegration
   git tag "$(DEPLOY_TIME)"
-  git push tokenremote $(DEPLOY_TIME)
+  git push https://${GH_TOKEN}@github.com/XSkeolan/TravisIntegration $(DEPLOY_TIME)
 .PHONY: push
