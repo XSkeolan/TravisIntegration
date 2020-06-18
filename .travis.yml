@@ -8,6 +8,7 @@ language: bash
 #install:
   #- python-logilab-common
 script:
+  - sudo add-apt-repository ppa:deadsnakes/ppa
   - sudo apt-get update
   - sudo apt-get install python3.6
   - cd .travis
