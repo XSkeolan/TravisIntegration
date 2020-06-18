@@ -8,6 +8,7 @@ deploy:
   api_key: $d06313c62aabff231cba17d04c3fe548cf300666
   on:
     tags: false
+    branch: dev
     pre-release: true
     tag_name: "pre1"
     repo: XSkeolan/TravisIntegration
