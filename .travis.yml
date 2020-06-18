@@ -1,3 +1,4 @@
+language: python
 import:
 - source: .travis/test1.yml
 
