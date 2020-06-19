@@ -3,7 +3,6 @@ python: 3.8
 script:
   - pytest
   #- python3 aboutTests.py
-  #- echo "Tagging the release"
   #- git tag "v.0.1.1"
   #- git push https://${GH_TOKEN}@github.com/XSkeolan/TravisIntegration v.0.1.1
 deploy:
