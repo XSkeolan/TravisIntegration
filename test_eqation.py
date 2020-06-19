@@ -7,7 +7,7 @@ class MyTestCase(unittest.TestCase):
         experror = "R"
         expresult = []
         a = 0
-        b = 0
+        b = 1
         c = 0
         answer, acterror = QuadraticEqation.Equation.Equl(a, b, c)
         self.assertEqual(experror, acterror)
