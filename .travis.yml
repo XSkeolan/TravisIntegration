@@ -10,9 +10,6 @@ deploy:
   provider: releases
   prerelease: true
   api_key: $GH_TOKEN
-  file: 
-    - TravisIntegration
-    - TravisIntegration.sha1
   skip_cleanup: true
   on:
     repo: XSkeolan/TravisIntegration
