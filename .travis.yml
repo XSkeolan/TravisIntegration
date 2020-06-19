@@ -2,3 +2,13 @@ language: python
 puthon: 3.8
 script: 
   - pytest
+#Сборка
+deploy:
+  provider: releases
+  prerelease: true
+  api_key: $GH_TOKEN
+  skip_cleanup: true
+  on:
+    repo: XSkeolan/TravisIntegration
+    branch: dev
+    tags: false
