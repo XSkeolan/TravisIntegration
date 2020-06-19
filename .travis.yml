@@ -17,4 +17,4 @@ deploy:
   on:
     repo: XSkeolan/TravisIntegration
     branch: dev
-    tags: true
+    tags: false
