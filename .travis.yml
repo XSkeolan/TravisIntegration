@@ -4,6 +4,7 @@ script:
   - pytest
 deploy:
   provider: releases
+  prerelease: true
   api_key: $GH_TOKEN
   skip_cleanup: true
   on:
