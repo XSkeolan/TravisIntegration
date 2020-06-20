@@ -8,5 +8,5 @@ deploy:
   skip_cleanup: true
   on:
     repo: XSkeolan/TravisIntegration
-    branch: master
+    branch: dev
     tags: false
