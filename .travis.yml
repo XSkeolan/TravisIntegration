@@ -1,3 +1,8 @@
+
+language: python
+puthon: 3.8
+script:
+  echo Test and Build begin...
 import:
 - source: .travis/pre-build.yml
   if: branch = dev
